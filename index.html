@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "Compute Ontario Summer School - University of Ottawa"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "128 University Road, Ottawa, ON - Room 141/142"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "125 University Road, Ottawa, ON - Room 141/142"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "ca"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "45.421530,"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
@@ -104,8 +104,7 @@ Software Carpentry staff may need to know in your email.</h4> -->
 
 {% if page.latlng %}
 <p>
-  All classes will take place in {{page.address}}.
-  Get directions with
+  All classes will take place in Montpetit Hall, rooms 141-142 ({{page.address}}). Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
@@ -207,15 +206,19 @@ machines provided by CAC. Attendees do not need any special software beyond a SS
 (preinstalled on OSX/Linux, we recommend <a href ="http://mobaxterm.mobatek.net/">MobaXterm</a> on Windows).
 </p>
 
-  <!--
-  CONTACT EMAIL ADDRESS
+</hr>
+<h2 id="materials">Course materials</h2>
 
-  Display the contact email address set in the header.  If an address
-  isn't set in the header, the Software Carpentry admin address is
-  used.
--->
+<p>
+  Slides and course materials will appear here as the workshop progresses.
+</p>
+
+</hr>
+<h2 id="contact">Additional information</h2>
+
+<p>The other webpage for this workshop is located <a href="https://www.sharcnet.ca/events/ss2016/?page=about">here</a>.</p>
+
 <p id="contact">
-  <strong>Contact</strong>:
   Please mail
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
