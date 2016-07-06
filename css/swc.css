@@ -515,7 +515,7 @@ dd {
 }
 
 .header.home {
-    background: url(../img/header.png) no-repeat center center;
+    background: url(http://cac.queensu.ca/wp-content/uploads/2016/03/CAC-Icon_512x512.png) no-repeat center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
