@@ -2,7 +2,7 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "Compute Ontario Summer School - University of Ottawa"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "128 University Road, Ottawa, ON - Room 141/142"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "ca"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "45.421530,"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
@@ -10,7 +10,7 @@ humandate: "Aug 8-12, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:30 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-08-08      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2016-08-12        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Jeff Stafford", "Hartmut Schmider", "Gang Liu", "Weiguang Guan", "Pawel Pomorski", "Sergey Mashchenko"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Jeff Stafford", "Hartmut Schmider", "Gang Liu", "Marcelo Ponce", "Pawel Pomorski", "Sergey Mashchenko"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Nabil Benabbou"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "jeff.stafford@queensu.ca"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
@@ -64,44 +64,35 @@ Software Carpentry staff may need to know in your email.</h4> -->
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  The Compute Ontario Summer School on High Performance and Technical Computing
+  is an annual educational event for graduate/undergraduate students, postdocs
+  and researchers who are engaged in a compute intensive research. Held geographically
+  in the west, centre and east of the province of Ontario, the summer school provides attendees
+  with the opportunity to learn and share knowledge and experience in high performance
+  and technical computing on modern HPC platforms.
 </p>
-<p align="center">
-  <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
-  </em>
+<p>
+  This is the website for Compute Ontario Summer School East (University of Ottawa), hosted by
+  the Centre for Advanced Computing. This year's workshop is divided into two different streams 
+  focusing on topics in either general programming/data analysis or parallel programming/high performance computing.
 </p>
 
-<!--
-  AUDIENCE
-
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
--->
-<p id="who">
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+<p id="Stream 2">
+  <strong>Stream 1</strong> of this year's workshop is focused on data analysis and general purpose programming.
+  Students will learn how to use the command-line, write programs in R and Python, handle data using SQL,
+  use Git for version control, and receive a primer on visualization. No prior computing experience is needed for
+  this stream and is appropriate for anyone wanting to learn more about programming and high performance computing.
 </p>
 
-<!--
-  LOCATION
+<p id="Stream 2">
+  <strong>Stream 2</strong> of this year's summer school covers advanced topics in high performance computing, with a focus 
+  on parallel programming. The topics of this stream include shared memory programming with OpenMP, parallel programming
+  with the Posix Thread Library, distributed memory programming with MPI, and programming GPUs with CUDA. Although no prior 
+  experience with parallel programming is required, basic skills with C, C++, or Fortran is expected. 
+</p>
 
-  This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
-  can use http://itouchmap.com/latlong.html to find the lat/long of an
-  address.
--->
+
+
 {% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
@@ -122,37 +113,7 @@ Software Carpentry staff may need to know in your email.</h4> -->
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
-</p>
-
-<!--
-  ACCESSIBILITY
-
-  Modify the block below if there are any barriers to accessibility or
-  special instructions.
--->
-<p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody.
-  The workshop organisers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>get in touch</a>
-  {% else %}
-    <a href='mailto:{{site.contact}}'>get in touch</a>
-  {% endif %}
-  and we will attempt to provide them. 
+  <a href="#setup">below</a>). 
 </p>
 
 <!--
