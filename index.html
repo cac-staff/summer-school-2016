@@ -88,50 +88,7 @@ Software Carpentry staff may need to know in your email.</h4> -->
   <strong>Stream 2</strong> of this year's summer school covers advanced topics in high performance computing, with a focus 
   on parallel programming. The topics of this stream include shared memory programming with OpenMP, parallel programming
   with the Posix Thread Library, distributed memory programming with MPI, and programming GPUs with CUDA. Although no prior 
-  experience with parallel programming is required, basic skills with C, C++, or Fortran is expected. 
-</p>
-
-
-
-{% if page.latlng %}
-<p id="where">
-  <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
-</p>
-{% endif %}
-
-<!--
-  SPECIAL REQUIREMENTS
-
-  Modify the block below if there are any special requirements.
--->
-<p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). 
-</p>
-
-<!--
-  CONTACT EMAIL ADDRESS
-
-  Display the contact email address set in the header.  If an address
-  isn't set in the header, the Software Carpentry admin address is
-  used.
--->
-<p id="contact">
-  <strong>Contact</strong>:
-  Please mail
-  {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
-  {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
-  {% endif %}
-  for more information.
+  experience with parallel programming is required, basic Linux familiarity and skills with C, C++, or Fortran is expected. 
 </p>
 
 <hr/>
@@ -144,6 +101,16 @@ Software Carpentry staff may need to know in your email.</h4> -->
   2' to be actual dates or days of the week.
 -->
 <h2 id="schedule">Schedule</h2>
+
+{% if page.latlng %}
+<p>
+  All classes will take place in {{page.address}}.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+</p>
+{% endif %}
 
 <div class="row">
   <div class="col-md-6">
@@ -209,58 +176,34 @@ Software Carpentry staff may need to know in your email.</h4> -->
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2 id="syllabus">Syllabus</h2>
+<h2 id="requirements">Registration and setup</h2>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
+All students should register for the course at 
+<a href="https://www.sharcnet.ca/events/ss2016/?page=register_east&site=east">https://www.sharcnet.ca/events/ss2016/?page=register_east&site=east</a>
+if they wish to attend.
+
+Beyond registration, students should bring a laptop and install the software specific to the stream of the 
+workshop they wish to attend (see below):
+
+<strong>Stream 2</strong> attendees do not need any special software beyond an SSH client 
+(preinstalled on OSX/Linux, we recommend <a href ="http://mobaxterm.mobatek.net/">MobaXterm</a> on Windows).
+  
   <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
-     </ul>
-   </div>
-   -->
+  CONTACT EMAIL ADDRESS
+
+  Display the contact email address set in the header.  If an address
+  isn't set in the header, the Software Carpentry admin address is
+  used.
+-->
+<p id="contact">
+  <strong>Contact</strong>:
+  Please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  if you wish to get in touch or need more information.
+</p>
+
 </div>
